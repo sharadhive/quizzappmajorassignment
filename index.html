@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz App</h1>
+  </header>
+
+  <main>
+    <section id="quiz-section">
+      <div id="name-container">
+        <label for="name-input">Enter your name:</label>
+        <input type="text" id="name-input">
+        <button id="start-button">Start</button>
+      </div>
+
+      <div id="options-container" style="display: none;">
+        <h2>Select a category:</h2>
+        <ul id="options">
+          <li><button class="category-button" data-category="profit-loss">Profit & Loss</button></li>
+          <li><button class="category-button" data-category="probability">Probability</button></li>
+          <li><button class="category-button" data-category="pipes">Pipes</button></li>
+        </ul>
+      </div>
+
+      
+      <div id="question-container" style="display: none;">
+        <h3 id="question">Question goes here</h3>
+        <ul id="question-options">
+          <li><input type="radio" name="option" value="option1" id="option1"><label for="option1">Option 1</label></li>
+          <li><input type="radio" name="option" value="option2" id="option2"><label for="option2">Option 2</label></li>
+          <li><input type="radio" name="option" value="option3" id="option3"><label for="option3">Option 3</label></li>
+          <li><input type="radio" name="option" value="option4" id="option4"><label for="option4">Option 4</label></li>
+        </ul>
+        <button id="next-button">Next</button>
+      </div>
+
+      <div id="result-container" style="display: none;">
+        <h3>Quiz Results</h3>
+        <p id="score">Score: <span id="score-value"></span></p>
+        <p id="percentage">Percentage: <span id="percentage-value"></span></p>
+        <p id="attempted">Total Questions Attempted: <span id="attempted-value"></span></p>
+        <p id="correct">Correct Answers: <span id="correct-value"></span></p>
+        <p id="incorrect">Incorrect Answers: <span id="incorrect-value"></span></p>
+        <button id="restart-button">Restart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Quiz App. All rights reserved. by TextBook </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
